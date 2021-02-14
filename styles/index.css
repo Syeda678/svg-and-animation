@@ -1,0 +1,110 @@
+.sky {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    background-color: skyblue ;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+.sky div {
+    display: flex;
+}
+
+/*// Cloud animation //*/
+.cloud-1 {
+    height: 300px;
+    margin-top: 50px;
+    animation-name: clouds;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+.cloud-2 {
+    height: 300px;
+    margin-top: -50px;
+    animation-name: clouds;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+.cloud-3 {
+    height: 300px;
+    margin-top: 50px;
+    animation-name: clouds;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+} 
+
+@keyframes clouds{
+    from{ transform: translateX(-1000px);}
+    to{ transform: translateX(1000px);}
+}
+
+.invitation-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: slateblue solid 5px;
+    background-color: rgb(255, 238, 250);
+    height: 500px;
+    width: 500px;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end
+}
+h2 {
+    margin: auto;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+p {
+    font-family: "poppins", sans-serif;
+}
+.cards {
+    display: flex;
+}
+
+.card-1 {
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+}
+.card-2 {
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+} 
+
+/* // Animation added from animate.css //*/
+.animate__animated {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: shakeX;
+    animation-duration: 1s;
+}
+
+/*// Icons //*/
+.decline-icon {
+    height: 100px;
+    fill: palevioletred;
+    transition: fill 1s, transform 0.3s;
+}
+.decline-icon:hover {
+    fill: red;
+    transform: rotate(90deg);
+}
+
+.accept-icon {
+    height: 60px;
+    fill: palevioletred;
+    transition: fill 1s, transform 0.3s;
+}
+.accept-icon:hover {
+    fill: green;
+    transform: rotate(360deg);
+}
